@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>113互動程式設計期中報告</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <!-- 圓形容器 -->
+        <div id="circles-container"></div>
+    </div> <!-- 背景層 -->
+    <iframe id="content-frame" src="" frameborder="0"></iframe> <!-- iframe層 -->
+    <ul class="menu"> <!-- 選單層 -->
+    <li>首頁</li>
+    <li id="intro-button">自我介紹</li> <!-- 加上 ID -->
+    <li class="dropdown">
+        作品集
+        <ul class="submenu">
+            <li><a href="https://gffhhgvn.github.io/0225/" data-src="https://gffhhgvn.github.io/0225/">第一周</a></li>
+            <li><a href="https://gffhhgvn.github.io/0304/" data-src="https://gffhhgvn.github.io/0304/">第二周</a></li>
+            <li><a href="https://gffhhgvn.github.io/0311/" data-src="https://gffhhgvn.github.io/0311/">第三周</a></li>
+            <li><a href="https://github.com/gffhhgvn/0311.git" data-src="https://github.com/gffhhgvn/0311.git">第四周</a></li>
+        </ul>
+    </li>
+    <li id="quiz-button">測驗卷</li>
+    <li id="teaching-video">教學影片</li>
+</ul>
+
+    <script src="script.js"></script>
+    <div id="quiz-popup" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:black; color:white; z-index:1000; padding:30px; overflow:auto;">
+</div>
+
+</body>
+</html>
